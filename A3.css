@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 2000px;
+   /* background: #C454A0FF;*/
+    background: url(./images/b7.jpg);
+    /*overflow-y: scroll;*/
+    /*font-size: 2em;*/
+}
+.header {
+    width: 1000px;
+    margin: 0 auto;
+    /* background: #CCC; */
+    /* border: 1px solid #F00; */
+}
+.header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*.header .logo {
+    width: 20%;
+    height: 50px;
+    background: #abcdef;
+    float: left;
+}*/
+
+.header .nav {
+    width: 100%;
+    height: 50px;
+    /*background: #abc;*/
+    float: right;
+    margin-bottom: 10px;
+}
+
+.nav_li{
+    display: inline-block;
+    /*padding-left: 15px;*/
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height:300px;
+    margin-top: 50px;
+    /*background: darkgray;*/
+    margin-bottom: 10px;
+}
+.ba_1 .ba_3{
+
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.ba_1{
+    margin-left: 170px;
+    float: left;
+}
+.ba_3{
+    margin-right: 140px;
+    float: right;
+}
+
+.hh{
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    text-align: center;
+    float: left;
+}
+/*.hh p{
+    text-align: center;
+    font-size: 18px;
+}*/
+.pro {
+    width: 1000px;
+    background: #bca;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.pro .box{
+    width: 240px; /* 240px * 4 = 960 + 5px * 2 */
+    height: 200px;
+    background: #fa0;
+    float: left;
+    /*margin: 0 5px;*/
+    text-align: center;
+    line-height: 200px;
+    display: inline-block;
+}
+.box p{
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.xx{
+    margin-top: 50px;
+    width: 50%;
+    height: 200px;
+    margin-left: 20%;
+    text-align: center;
+    float: left;
+}
+.xx_1, {
+    width: 35%
+    height: 200px;
+    margin-left: 5%;
+    display: inline-block;
+}
+.ss,{
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    margin-left: 20%;
+    text-align: center;
+    float: left;
+}
+.ss_1,{
+    width: 35%
+    height: 300px;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.ll{
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    margin-left: 20%;
+    text-align: center;
+    float: left;
+}
+
+.ll_1 {
+    width: 35%
+    height: 300px;
+    margin-left: 5%;
+    display: inline-block;
+
+}
+.img:hover{  
+    /*设置浮动*/
+    transform: translateY(-10px);
+}

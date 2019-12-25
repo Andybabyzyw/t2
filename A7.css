@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #900;
+	font-size: 16px;
+}
+body{
+	/*background: url("images/body.png") no-repeat;*/
+	background-size: 100% 100%;
+	background: url('./images/b5.jpg');
+}
+
+#wrap{
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 50px;
+	/*background: red;*/
+	/*background: #AFA5A5E5;*/
+}
+
+/*#header{
+	height: 100px;
+	background: url(images/webbanner6.jpg) no-repeat;
+	background-size: 100% 100%;
+}*/
+
+#nav{
+	margin-top: 0px;
+	height: 32px;
+	/*background: #d3effc;*/
+	text-align: center;
+	line-height: 32px; 
+}
+
+.nav_li{
+	display: inline-block;
+	padding-left: 15px;
+	list-style: none;
+}
+
+#menu{
+	float: left;
+	width: 180px;
+	height: 438px;
+	text-align: center;
+	margin-right: 20px;
+
+}
+
+#menu_box{
+	margin-top: 20px; 
+}
+
+#menu_ul{
+	margin-top: 30px;
+}
+
+.menu_li{
+	list-style: none;
+	line-height: 32px;
+}
+
+#main{
+	float: left;
+	height: 300px; 
+	width: 670px;
+	margin-top: 80px;
+	/*padding-top: 30Px;*/
+	background-color: rgba(178,178,178,0.5);
+	/*opacity: 0.3;*/
+}
+
+.ftcss{
+    font-family: 宋体, sans-serif;
+	font-size: 12pt;
+	color: #0011aa;
+	text-align: left;
+	text-indent: 2em;
+	line-height: 1.8;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+#main_table{
+	border-style: double dotted;
+	border-color: blue red;
+	border-width: 2mm 1mm;
+	border-collapse: collapse;
+	padding-top: 10px;
+	margin-top: 10px;
+	/*background: url("images/shuimo.jpg") no-repeat;*/
+	background-size: 100% 100%;
+}
+
+td{
+	width: 65px;
+	border: 1px solid #000;
+	margin: 4pt;
+    padding: 4px 3px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#d{
+	width: 550px;
+	height: 100px;
+}
+
+form{
+	padding-top: 20px;
+}
+form li{
+	list-style: none;
+	line-height: 30px;
+}
+
+#content{
+	width: 600px;
+	height: 350px;
+	padding-top: 30px;
+	padding-left: 25px;
+	overflow: auto;
+}
+
+#left{
+	width: 100px;
+	text-align: right;
+}
+
+#right{
+	margin-left: 20px;
+}
+
+#left,#right{
+	display: inline-block;
+}
+
+#bt{
+	margin-top: 20px;
+	padding-left: 150px;
+}
+
+#footer{
+	margin-top: 600px;
+	/*margin-bottom: 0px;*/
+	height: 32px;
+	line-height: 32px;
+	/*bottom: 1%;*/
+	/*background: #d3effc;*/
+	/*clear: both;*/
+	text-align: center;
+}

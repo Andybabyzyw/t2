@@ -1,0 +1,30 @@
+
+
+@media screen and (min-width:640px) and (max-width:999px) {
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    #container {
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    #left {
+        width: 150px;
+        margin-right: 10px;
+        float: left;
+    }
+
+    #main {
+        width: 480px;
+        float: left;
+    }
+
+    #right {
+        width: 640px;
+        float: left;
+    }
+
+}

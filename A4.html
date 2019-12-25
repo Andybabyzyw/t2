@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拼图游戏</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 50px 0 0 50px;
+            text-align: center;
+            /*background: #0FE2EFFF;*/
+            background: url(./images/b59.jpeg);
+            
+        }
+        div{
+            width: 200px;
+            height: 200px;
+
+        }
+        table{
+            margin-left: 25%;
+            text-align: center;
+        }
+        .nav_li{
+            /*display: inline-block;
+            padding-left: 20px;*/
+            list-style: none;
+        }
+
+        .box{
+            background:url("./images/c16.jpg") no-repeat;
+            /*opacity: 0.7;*/
+        }
+        #box2{
+            background-position: -200px 0;
+        }
+        #box3{
+            background-position: -400px 0;
+        }
+        #box4{
+            background-position: 0 -200px;
+        }
+        #box5{
+            background-position: -200px -200px;
+        }
+        #box6{
+            background-position: -400px -200px;
+        }
+        #box7{
+            background-position: 0 -400px;
+        }
+        #box8{
+            background-position: -200px -400px;
+        }
+        #box9{
+            background-position: -400px -400px;
+        }
+        #btn{
+            margin: 20px 0 0 200px;
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+
+        function over(e) {
+            e.preventDefault();
+        }
+        //抓起
+        function drap(e) {
+            var id=e.target.id;
+            e.dataTransfer.setData("id",id);
+        }
+        //放下
+        function drop(e) {
+            // 获取被抓id
+            var zhuaId = e.dataTransfer.getData("id");
+            // 获取方向位置元素的id
+            var fangId = e.target.id;
+
+
+            //获取抓的元素 和 放下元素
+            var zhua= document.getElementById(zhuaId);
+            var fang = document.getElementById(fangId);
+
+            //获取元素的父元素
+            var zParent=zhua.parentNode;
+            var fParent=fang.parentNode;
+
+            //替换子元素
+            zParent.appendChild(fang);
+            fParent.appendChild(zhua);
+
+            jiaoyan();
+
+        }
+
+        //校验
+        function jiaoyan() {
+
+            var count=0;
+            var boxs = document.getElementsByClassName('box');
+
+            for (var i = 0; i < boxs.length; i ++){
+                var box = boxs[i];
+                var fbox = box.parentNode;
+
+                var boxId = box.getAttribute("id");
+                var fboxId = fbox.getAttribute("id");
+
+                if (boxId.replace("box", "") === fboxId.replace("f", "")) {
+                    count++;
+                }else{
+                    return
+                }
+
+
+            }
+
+
+            if (count===9){
+                setTimeout(function () {
+                    alert("恭喜你拼对了")
+                },200)
+            }
+        }
+
+        function daluan() {
+
+            var boxs= document.getElementsByClassName('box');
+
+            for (var i = 0; i < 20; i++) {
+                var x = parseInt(Math.random()*9);
+                var y = parseInt(Math.random()*9);
+
+                var xbox=boxs[x].parentNode;
+                var ybox=boxs[y].parentNode;
+
+                xbox.appendChild(boxs[y]);
+                ybox.appendChild(boxs[x]);
+            }
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <div class="head" style="margin-top: 0px;height: 32px;text-align: center;line-height: 32px; ">
+        <ul id="nva_ul">
+            <li class="nav_li"><a href="index.html">💘首页</a></li>
+            <li class="nav_li"><a href="A0.html">🍞简介</a></li>
+            <li class="nav_li"><a href="A1.html">🎉美食</a></li>
+            <li class="nav_li"><a href="A2.html">🌺著名景点</a></li>
+            <li class="nav_li"><a href="A3.html">🙊人文风俗</a></li>
+            <li class="nav_li"><a href="A4.html">🤝拼图游戏</a></li>
+            <li class="nav_li"><a href="A5.html">🌟计算器</a></li>
+            <li class="nav_li"><a href="A6.html">🍑倒计时</a></li>
+            <li class="nav_li"><a href="A7.html">🌵注册/登录</a></li>
+            <!-- <li class="nav_li"><a href="A8.html">其他</a></li> -->
+        </ul>
+        
+    </div>
+
+
+    <table border="1" class="xx">
+    <tr>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f1">
+                <div draggable="true" ondragstart="drap(event)" id="box1" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f2">
+                <div draggable="true" ondragstart="drap(event)" id="box2" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f3">
+                <div draggable="true" ondragstart="drap(event)" id="box3" class="box"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f4">
+                <div draggable="true" ondragstart="drap(event)" id="box4" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f5">
+                <div draggable="true" ondragstart="drap(event)" id="box5" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f6">
+                <div draggable="true" ondragstart="drap(event)" id="box6" class="box"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f7">
+                <div draggable="true" ondragstart="drap(event)" id="box7" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f8">
+                <div draggable="true" ondragstart="drap(event)" id="box8" class="box"></div>
+            </div>
+        </td>
+        <td>
+            <div ondrop="drop(event)" ondragover="over(event)" id="f9">
+                <div draggable="true" ondragstart="drap(event)" id="box9" class="box"></div>
+            </div>
+        </td>
+    </tr>
+    </table>
+    <button id="btn" onclick="daluan()">重 置</button>
+
+    <dir class="footer" style="text-align: center;margin-bottom: 0px;">
+        <p class="foot-1" style="font-size: 20px;">2019-2020-1学期 web前端开发技术课程设计 软件Q176 李秋菊 201709601051</p>
+    </dir>
+</body>
+</html>

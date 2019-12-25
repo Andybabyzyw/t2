@@ -1,0 +1,21 @@
+@media screen and (max-width:639px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    #container {
+        width: 320px;
+    }
+
+    #left {
+        width: 320px;
+    }
+
+    #main {
+        width: 320px;
+    }
+
+    #right {
+        width: 320px;
+    }
+}

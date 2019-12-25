@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<!-- 下拉菜单按钮 -->
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    
+    <script src="./jquery/jquery.min.js"></script>
+	<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+	<!-- 倒计时 -->
+	<link rel="stylesheet" type="text/css" href="A6.css">
+	<!-- <script type="text/javascript" src="./jquery/jquery-3.3.1.min.js"></script> -->
+	<script type="text/javascript" src="A6.js"></script>
+
+
+
+</head>
+<body>
+	<div id="wrap">
+
+		<div class="left" style="margin-right: 50px;margin-top: 50px;">
+				<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    桂平市
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="index.html">首页</a></li>
+	                  	<li><a href="A0.html">简介</a></li>
+	                  	<li><a href="A1.html">美食</a></li>  
+	                  	<li><a href="A2.html">美景</a></li>                  
+	                  	<li><a href="A3.html">人文风俗</a></li>
+	                  	<li><a href="A4.html">拼图游戏</a></li>
+	                  	<li><a href="A5.html">计算器</a></li>
+	                  	<li><a href="A6.html">倒计时</a></li>
+	                  	<li><a href="A7.html">注册/登录</a></li>
+	                  	<!-- <li><a href="A8.html">其他</a></li> -->
+					  </ul>
+				</div>
+		</div>
+
+
+
+
+		<h1 class="align">开始倒计时</h1>
+
+		<!-- 目标时间输入 -->
+		<div id="target_in" class="align" >
+			<label>请输入：</label>
+			<input type="text" class="in" name="year" id="year" style="background: black;">
+			<label>年</label>
+
+			<input type="text" class="in" name="month" id="month" style="background: black;">
+			<label>月</label>
+
+			<input type="text" class="in" name="day" id="day" style="background: black;">
+			<label>日</label>
+		</div>
+        
+		
+
+		<!-- 开始时间按钮 -->
+		<div id="start"></div>
+
+        
+
+		<!-- 小标题 -->
+		<div id="title_t">
+			<label>现在距离-</label>
+			<label id="tYear">2019</label>
+			<label>年</label>
+			<label id="tMonth">10</label>
+			<label>月</label>
+			<label id="tDay">23</label>
+			<label>日-还剩</label>
+		</div>
+
+
+       <!--  倒计时 -->
+		<div class="align"> 
+			<label id="iDay">000</label>
+			<label class="num">天</label>
+			<label id="iHour">00</label>
+			<label class="num">小时</label>
+			<label id="iMin">000</label>
+			<label class="num">分</label>
+			<label id="iSec">00</label>
+			<label class="num">秒</label>
+			
+		</div>
+		
+	</div>
+
+	<dir class="footer" style="text-align: center;margin-bottom: 0px;">
+        <p class="foot-1" style="font-size: 20px;">2019-2020-1学期 web前端开发技术课程设计 软件Q176 李秋菊 201709601051</p>
+    </dir>
+
+</body>
+</html>

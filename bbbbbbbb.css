@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*设置全局背景*/
+/*body{
+    background: url('images/W14.jpg') no-repeat;
+    background-size: 100% 100%
+}*/
+
+#wrap{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#header{
+	/*position: relative;*/
+	height: 100px;
+	background: url('images/W2.jpg') no-repeat;
+	background-size: 100% 100%;
+
+	/*background:url('images/W0.jpg');
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	width: 30px;
+	height: 30px;*/
+}
+.header_i{
+	position: relative;
+	height: 100px;
+	right: -715px;
+	width: 80px;
+	/*padding-left: auto;*/
+}
+
+#nav{
+	height: 32px;
+	background: #d3effc;
+	text-align: center;
+	line-height: 32px;
+}
+
+.nav_list{
+	display: inline-block;
+	padding-left: 35px;
+	list-style: none;
+}
+
+#menu{
+	padding-top: 20px;
+	float: left;
+	width: 180px;
+	height: 350px;
+	text-align: center;
+	background: #d3effc;
+}
+
+#menu_box{
+	margin-top: 20px;
+}
+
+#menu_ul{
+	list-style: none;
+	margin-top: 30px;
+}
+
+.menu_li{
+	list-style: none;
+	line-height: 32px;
+}
+
+#main{
+	/*height: 370px;
+	width: 1300px;*/
+	/*float: left;*/
+	background: url('images/W13.jpg') no-repeat;
+    background-size: 350px 500px;
+	/*font-weight: bold;
+	text-indent: 2em;*/
+
+}
+
+#text{
+	text-indent: 2em;
+}
+
+.text_1{
+    font-size: italic;
+}
+
+.text_2{
+    font-weight: bold;
+}
+
+.text_3{
+	flex-direction: underline;
+}
+
+
+#main_table{
+    border-style: double dotted;
+    border-color: blue red;
+    border-width: 1mm 1mm;
+    border-collapse: collapse;
+}
+
+td{
+	border: 1px solid #000;
+	margin: 1pt;
+	padding: 1px 3px;
+}
+
+#content{
+	width: 649px;
+	height: 370px;
+	
+}
+
+#footer{
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	background: #d3effc;
+	clear: both;
+	text-align: center;
+}
